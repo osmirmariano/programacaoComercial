@@ -1,0 +1,36 @@
+body{
+    background-color: white;
+}
+
+h1{
+    color: red;
+    text-align: center;
+}
+
+p{
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+th, td{
+    border-bottom: 3px dashed #d0d0d0; 
+}
+
+tr:nth-child(even){
+    background-color: #00ff00;
+}
+
+tr:hover{
+    background-color: #0000ff;
+}
+
+#area-mensagens{
+    border: 1px solid #ff0000;
+    padding: 5px 5px 5px 5px; 
+}
+
+.destaque{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: greenyellow;
+}
