@@ -4,6 +4,11 @@
         <meta charset="UFT-8"/>
         <title>Título da Página</title>
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script> 
+			function soma(p1, p2){
+				alert(p1+p2);
+			}
+		</script>
     </head>
     <body>
         <h1>Primeiro Cabeçalho</h1>
@@ -93,6 +98,10 @@
 			<input type="reset" value="Limpar">
 			<input type="submit" value="Enviar">
 			<button type="submit" onclick="alert('Hello Word')"> Click Me!</button>
+			
+			<button type="button" onclick="soma(2,3);"> 
+				Botão2
+			</button>
 		</form>
 	
 		<div id="area-mensagens">
