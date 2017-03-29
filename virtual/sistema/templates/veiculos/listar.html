@@ -2,13 +2,46 @@
     <head>
         <meta charset="UTF-8">
         <title>Lista de veículos cadastrados</title>
+        <!--<link rel="stylesheet" href="listar.css"/>-->
+        <style>
+            .lista{
+                list-style: none !important;
+                font-family: Cambria, Cochin, Georgia;
+                color: black !important;
+                font-size: 1.3em;
+            }
+            a{
+                text-decoration: none;
+            }
+            .listaLI{
+                text-decoration: none;
+                text-align: center;
+            }
+            .btn-apagar{
+                color: white;
+                background-color: #2196f3; 
+                border-radius: 5px;
+                margin-left: 3%;
+            }
+            .btn-apagar:hover{
+                background-color: white;
+                color: blue;
+            }
+        </style>
     </head>
 
     <body>
-        <ul>
+        <ul class="lista">
             {% for veiculo in object_list %}
-                <li>
-                    {{ veiculo }}
+                <li class="listaLI">
+                    <a href="/veiculos/{{veiculo.pk}}">
+                        {{ veiculo }}
+                    </a>
+                    <a href="/veiculos/excluir/{{veiculo.pk}}">
+                        <button class="btn-apagar">
+                            Apagar
+                        </button>
+                    </a>
                 </li>
             {% endfor %}
         </ul>
